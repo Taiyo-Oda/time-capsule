@@ -25,3 +25,20 @@ Things you may want to cover:
 
 
 <!-- usersテーブル -->
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|mailaddres|string|null: false|
+|password|string|null: false|
+- has_many :capsules
+
+<!-- capsulesテーブル -->
+|Column|Type|Options|
+|------|----|-------|
+|body|text||
+|image|string||
+|start|timestamp||
+|end|timestamp||
+|user|references|null: false, foreign_key: true|
+- belongs_to :user
+
