@@ -1,2 +1,18 @@
-%h1 Capsules#index
-%p Find me in app/views/capsules/index.html.haml
+.header
+  .header__logo
+    %h2 Schedules
+    %ul.header__lists
+    %li.list
+      = link_to do
+        = icon('fas', 'pen-square', class: 'icon')
+    %li.list
+      = link_to edit_user_path(current_user) do
+        = icon('fas', 'cog', class: 'icon')
+.contents
+  .contents__schedules
+    .plans
+      予定
+    .details
+      内容
+    .deadline
+      期限
